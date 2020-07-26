@@ -1,0 +1,383 @@
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o stateMachine.o stateMachine.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o switches.o switches.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o buzzer.o buzzer.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o p2_interrupt_handler.o p2_interrupt_handler.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2560 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2536 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2592 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2592 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2614 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2640 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2598 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2606 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2726 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2726 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2726 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2740 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2740 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+led.c: In function 'led_dim':
+led.c:47:9: error: 'k' undeclared (first use in this function)
+     if (k % 50 == 0)
+         ^
+led.c:47:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: led.o] Error 1
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+led.c: In function 'led_dim':
+led.c:47:9: error: 'k' undeclared (first use in this function)
+     if (k % 50 == 0)
+         ^
+led.c:47:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: led.o] Error 1
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2730 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2730 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2730 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o stateMachine.o stateMachine.c
+stateMachine.c: In function 'stateMachine':
+stateMachine.c:28:5: warning: implicit declaration of function 'leds_on' [-Wimplicit-function-declaration]
+     leds_on();
+     ^~~~~~~
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2684 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o switches.o switches.c
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+led.c: In function 'led_init':
+led.c:11:3: warning: implicit declaration of function 'leds_on' [-Wimplicit-function-declaration]
+   leds_on();
+   ^~~~~~~
+led.c: At top level:
+led.c:14:6: warning: conflicting types for 'leds_on'
+ void leds_on()
+      ^~~~~~~
+led.c:11:3: note: previous implicit declaration of 'leds_on' was here
+   leds_on();
+   ^~~~~~~
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2496 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+led.c: In function 'led_init':
+led.c:11:3: warning: implicit declaration of function 'leds_on' [-Wimplicit-function-declaration]
+   leds_on();
+   ^~~~~~~
+led.c: At top level:
+led.c:14:6: warning: conflicting types for 'leds_on'
+ void leds_on()
+      ^~~~~~~
+led.c:11:3: note: previous implicit declaration of 'leds_on' was here
+   leds_on();
+   ^~~~~~~
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2366 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make load
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o stateMachine.o stateMachine.c
+stateMachine.c: In function 'stateMachine':
+stateMachine.c:13:5: warning: implicit declaration of function 'leds_on' [-Wimplicit-function-declaration]
+     leds_on();
+     ^~~~~~~
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h   -c -o led.o led.c
+led.c: In function 'led_init':
+led.c:11:3: warning: implicit declaration of function 'leds_on' [-Wimplicit-function-declaration]
+   leds_on();
+   ^~~~~~~
+led.c: At top level:
+led.c:14:6: warning: conflicting types for 'leds_on'
+ void leds_on()
+      ^~~~~~~
+led.c:11:3: note: previous implicit declaration of 'leds_on' was here
+   leds_on();
+   ^~~~~~~
+msp430-elf-gcc -mmcu=MSP430G2553 -I./h -L/opt/ti/msp430_gcc/include -o states.elf stateMachine.o switches.o led.o buzzer.o p2_interrupt_handler.o main.o lib/libTimer.a
+msp430loader.sh states.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  states.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f states.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 2504 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   led.c
+	modified:   stateMachine.c
+	modified:   switches.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	#make load#
+	.#make load
+	buzzer.o
+	led.o
+	main.o
+	make load
+	p2_interrupt_handler.o
+	stateMachine.o
+	states.elf
+	switches.o
+
+no changes added to commit (use "git add" and/or "git commit -a")
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> make clean
+rm -f *.o *.elf *~
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   led.c
+	modified:   stateMachine.c
+	modified:   switches.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	#make load#
+	.#make load
+	make load
+
+no changes added to commit (use "git add" and/or "git commit -a")
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> ls
+buzzer.c  led.c  main.c       make load               stateMachine.c  switches.h
+buzzer.h  led.h  Makefile     p2_interrupt_handler.c  stateMachine.h  timerLib
+h         lib    #make load#  README.md               switches.c
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> rm #make\ load\# 
+rm: missing operand
+Try 'rm --help' for more information.
+student@systems-vm:~/Documents/project-2-blinky-buzzy-toy-kevin-miner/project> 
