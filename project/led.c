@@ -5,16 +5,28 @@
 
 unsigned char red_on = 0, green_on = 0;
 
+char toggle_red();
+
 void led_init()
 {
   P1DIR |= LEDS;		// bits attached to leds are output
-  leds_on();
+  //leds_on();
 }
 
+void off() {
+  if (red_on)
+    P1OUT |= LED_RED;
+  else
+    P1OUT &= !LED_RED;
+  toggle_red();
+}
+
+/*
 void leds_on() 
  { 
    P1OUT = LEDS;  
  } 
+*/
 
 void led_dim()
 {

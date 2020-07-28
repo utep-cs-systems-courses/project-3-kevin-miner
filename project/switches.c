@@ -3,6 +3,8 @@
 #include "led.h"
 #include "stateMachine.h"
 #include "libTimer.h"
+#include "buzzer.h"
+#include "triangle.h"
 
 char state, switch_state_down, switch_state_changed; /* effectively boolean */
 char sw_1, sw_2, sw_3, sw_4, CURRENT_STATE;
@@ -40,14 +42,18 @@ switch_interrupt_handler()
   switch_state_changed = 1;
   if (sw_1) {
     stateMachine(1);
+    switch_state_changed = 0;
   }
   else if (sw_2) {
     stateMachine(2);
+    switch_state_changed = 0;
   }
   else if (sw_3) {
     stateMachine(3);
+    switch_state_changed = 0;
   }
   else if (sw_4) {
     stateMachine(4);
+    switch_state_changed = 0;
   }
 }
