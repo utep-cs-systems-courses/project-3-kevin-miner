@@ -11,26 +11,19 @@ void stateMachine(int state)
   switch (state) {
   case 1:
     led_dim();
-    //leds_on();
     drawTriangle();
     state = 0;
     break;
   case 2:
-    //binary_count();
-    //leds_on();
-    off();
-    //P1OUT = (toggle_red()) ? BIT6 : !LED_RED;
+    led_dim();
     state = 0;
     break;
   case 3:
-    led_alternate();
-    //leds_on();
+    drawFonts();
     state = 0;
     break;
   case 4:
     play_song();
-    //leds_on();
-    
     state = 0;
     break;
   default:

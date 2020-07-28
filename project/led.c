@@ -10,23 +10,18 @@ char toggle_red();
 void led_init()
 {
   P1DIR |= LEDS;		// bits attached to leds are output
-  //leds_on();
 }
 
-void off() {
-  if (red_on)
+// toggle red light
+void red() {
+  if (red_on) {
     P1OUT |= LED_RED;
-  else
+  }
+  else {
     P1OUT &= !LED_RED;
+  }
   toggle_red();
 }
-
-/*
-void leds_on() 
- { 
-   P1OUT = LEDS;  
- } 
-*/
 
 void led_dim()
 {
@@ -48,6 +43,7 @@ void led_dim()
   }
 }
 
+// count in binary up to 3
 void binary_count()
 {
   P1OUT = !LEDS;
@@ -66,6 +62,7 @@ void binary_count()
   __delay_cycles(5000000);
 }
 
+// alternate between lights
 void led_alternate()
 {
   for (int i = 0; i < 20; i++) {

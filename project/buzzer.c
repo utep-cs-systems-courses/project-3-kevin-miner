@@ -24,17 +24,9 @@ void buzzer_set_period(short cycles) /* buzzer clock = 2MHz.  (period of 1k resu
   CCR1 = cycles >> 1;		/* one half cycle */
 }
 
+// play Harry Potter's theme
 void play_song()
 {
-  //float B = 617;
-  //float Ds = 777;
-  //float E = 824;
-  //float F = 873;
-  //float Fs = 925;
-  //float G = 980;
-  //float A2 = 1100;
-  //float B2 = 1234;
-
   float B = 2024.76;
   float E = 1516.86;
   float G = 1275.59;
@@ -43,7 +35,6 @@ void play_song()
   float A = 1136.36;
   float Ds = 1607.06;
 
-  const long delay = 8000000;
   
   float notes[30] = {B, E, G, F, E, B2, A, F, E, G, F, Ds, F, B};
   for (int i = 0; i < 30; i++) {

@@ -13,7 +13,7 @@ void led_update();
 void toggle_on();
 void toggle_off();
 char toggle_red();
-void off();
+void red();
 void led_dim();
 void binary_count();
 void led_alternate();

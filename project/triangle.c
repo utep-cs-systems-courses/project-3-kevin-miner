@@ -19,7 +19,7 @@ void drawTriangle(void) {
       drawPixel(i, i-30+redraw, COLOR_BLUE);  // triangle right side
       drawPixel(62-(k++), i-30+redraw, COLOR_BLUE);  // triangle left side
     }
-    __delay_cycles(1000000);
+    __delay_cycles(2000000);
     clearScreen(COLOR_BLACK);
 
     // Should it move up or down
@@ -31,10 +31,14 @@ void drawTriangle(void) {
       down = 1;
     }
 
-    if (down)
+    if (down) {
       redraw += 5;
-    else 
+      drawString8x12(10, 5, "down", COLOR_WHITE, COLOR_BLACK);
+    }
+    else { 
       redraw -= 5;
+      drawString8x12(10, 5, "up", COLOR_WHITE, COLOR_BLACK);
+    }
     
     k = 0;
   }
@@ -67,4 +71,10 @@ void drawTriforce() {
   // Bottom line
   for (i=22; i<102; i++)
     drawPixel(i, 72, COLOR_BLUE);
+}
+
+void drawFonts() {
+  clearScreen(COLOR_BLACK);
+  drawString5x7(10, 10, "5x7 font", COLOR_WHITE, COLOR_BLACK);
+  drawString8x12(10, 30, "8x12 font", COLOR_WHITE, COLOR_BLACK);
 }
