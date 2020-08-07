@@ -9,7 +9,8 @@ char toggle_red();
 
 void led_init()
 {
-  P1DIR |= LEDS;		// bits attached to leds are output
+  P1DIR |= LEDS; // BITS ATTACHED TO LEDS are output
+  P1OUT &= ~LEDS;
 }
 
 // toggle red light

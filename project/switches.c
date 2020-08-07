@@ -34,7 +34,7 @@ void
 switch_interrupt_handler()
 {
   char p2val = switch_update_interrupt_sense();
-
+  P1OUT |= LED_RED;
   sw_1 = (p2val & SW1) ? 0 : 1;
   sw_2 = (p2val & SW2) ? 0 : 1;
   sw_3 = (p2val & SW3) ? 0 : 1;

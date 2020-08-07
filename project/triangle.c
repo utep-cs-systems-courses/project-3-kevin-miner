@@ -46,6 +46,7 @@ void drawTriangle(void) {
 
 /* Draws a triangle from the iconic video game series: The Legend of Zelda */
 void drawTriforce() {
+  clearScreen(COLOR_BLACK);
   int i, j = 0;
   for (i=62; i<82; i++) {
     drawPixel(i, i-30, COLOR_BLUE);
